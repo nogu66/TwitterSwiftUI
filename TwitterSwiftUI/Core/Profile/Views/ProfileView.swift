@@ -22,7 +22,7 @@ struct ProfileView: View {
             
             tweeetFileterBar
             
-            tweetView 
+            tweetView
             
             Spacer()
         }
@@ -116,24 +116,8 @@ extension ProfileView {
             .font(.caption)
             .foregroundColor(.gray)
             
-            HStack(spacing: 24) {
-                HStack(spacing: 4) {
-                    Text("807")
-                        .font(.subheadline)
-                        .bold()
-                    Text("Following")
-                        .font(.caption)
-                }
-                
-                HStack {
-                    Text("6.9")
-                        .font(.subheadline)
-                        .bold()
-                    Text("Followers")
-                        .font(.caption)
-                }
-            }
-            .padding(.vertical)
+            UserStatsView()
+                .padding(.vertical)
         }
         .padding(.horizontal)
     }
