@@ -15,7 +15,7 @@ struct TextArea: View {
         self.placeholder = placeholder
         self._text = text
         // for iOS < 16
-        // UITextView.appearance().backgroundColor = .clear
+        // UITextView.appearance().backgroundColor = .clear　
     }
     
     var body: some View {
@@ -29,7 +29,7 @@ struct TextArea: View {
             }
             
             TextEditor(text: $text)
-                // for iOS >= 16 
+                // for iOS >= 16
                 .scrollContentBackground(Visibility.hidden)
                 .padding(4)
         }
